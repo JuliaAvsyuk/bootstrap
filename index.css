@@ -1,0 +1,13 @@
+h1 {
+    border: 1px dotted red;
+
+}
+.left {
+    background-color: aqua;
+}
+.center {
+    background-color: deeppink;
+}
+.right {
+    background-color: lawngreen;
+}

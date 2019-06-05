@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Grid</title>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container-fluid">
+    <h1>3 different blocs</h1>
+    <div class="row">
+        <div class="col-md-4 left">Left</div>
+        <div class="col-md-4 center">Center</div>
+        <div class="col-md-4 right">Right</div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6 first">First</div>
+        <div class="col-xs-12 col-sm-3 col-md-8 col-lg-6 second">Second</div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-12 third">
+            <div class="row">
+                <div class="col-lg-4 first">First</div>
+                <div class="col-lg-4 second">Second</div>
+            </div>
+        </div>
+        <br/> <br/>
+        <div class="col-sm-12 fourth">Fourth</div>
+    </div>
+</div>
 
+<div class="content">
+    <div class="block">1</div>
+    <div class="block">2</div>
+    <div class="block">3</div>
+    <div class="block">4</div>
+    <div class="block">5</div>
+    <div class="block">6</div>
+</div>
 </body>
 </html>

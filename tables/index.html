@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tables</title>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<div class="table-responsive">
+    <!--table-responsive адаптивность, на маленьких устройствах полоса прокрутки будет внизу-->
+    <table class="table table-hover table-bordered">
+        <!--table-striped в полоску строки -->
+        <!-- table-hover подсвечивает при наведении -->
+        <!-- table-bordered добавляет границы -->
+        <!-- table-sm меньшие отступы между строками -->
+        <caption>Table of users</caption>
+        <thead>
+        <tr class="table-dark">
+            <!--table-active - active all row-->
+            <!--<tr class="table-primary">...</tr>-->
+            <!--<tr class="table-secondary">...</tr>-->
+            <!--<tr class="table-success">...</tr>-->
+            <!--<tr class="table-danger">...</tr>-->
+            <!--<tr class="table-warning">...</tr>-->
+            <!--<tr class="table-info">...</tr>-->
+            <!--<tr class="table-light">...</tr>-->
+            <!--<tr class="table-dark">...</tr>-->
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Tel num</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td class="bg-success">Marina</td>
+            <td>Vasyleva</td>
+            <td>1514641</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td class="bg-dark">Asya</td>
+            <td>Cucushkina</td>
+            <td>8575411</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td class="bg-secondary">Joy</td>
+            <td>Flex</td>
+            <td>9888774</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
+<!--https://getbootstrap.com/docs/4.0/content/tables/-->

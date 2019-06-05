@@ -1,0 +1,37 @@
+h1 {
+    border: 1px dotted red;
+
+}
+.left {
+    background-color: aqua;
+}
+.center {
+    background-color: deeppink;
+}
+.right {
+    background-color: lawngreen;
+}
+.first {
+    background-color: azure;
+}
+.second {
+    background-color: mediumblue;
+}
+.third {
+    background-color: yellow;
+}
+.fourth {
+    background-color: green;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.block {
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

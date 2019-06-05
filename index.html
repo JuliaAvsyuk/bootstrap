@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <!--<style>-->
+        <!--body {-->
+            <!--padding: 30px;-->
+        <!--}-->
+    <!--</style>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+    <form>
+        <div class="form-group">
+           <lable for="email">Email address</lable>
+           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       </div>
 
+        <div class="form-group">
+             <lable for="password">Password</lable>
+            <input type="password" class="form-control" id="password" placeholder="Password" >
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <lable class="form-check-lable" for="check">Check me out</lable>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br> <br>
+        <div class="form-group">
+             <lable for="exFileInput">Example file input</lable>
+            <input type="file" class="form-control-file" id="exFileInput">
+        </div>
+
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
+    </form>
+</div>
 </body>
 </html>

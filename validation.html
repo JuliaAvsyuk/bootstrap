@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-3">
+            <lable for="name">Name</lable>
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+        </div>
+
+        <div class="col-md-3">
+            <lable for="surname">Surname</lable>
+            <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <lable for="email">Email</lable>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="emailPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email" aria-describedby="emailPrepend" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="invalid-feedback">
+                    Please enter your email.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <lable for="password">Password</lable>
+            <input type="password" class="form-control" id="password" placeholder="Password" >
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check" required>
+            <label class="form-check-label" for="check">
+                Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
